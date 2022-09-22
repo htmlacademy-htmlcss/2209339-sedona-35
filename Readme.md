@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ignat Vetoshin](https://up.htmlacademy.ru/htmlcss/35/user/2209339).
-* Наставник: `Неизвестно`.
+* Наставник: [Irina Malinovskaya](https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
