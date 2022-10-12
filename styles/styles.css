@@ -103,3 +103,40 @@ body {
   text-decoration: none;
 
 }
+
+.container-filter {
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+  background-color: #82B3D3;
+  background-image: url(../images/background-filter.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.inner-header-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+}
+
+.inner-header-link {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.hotel-card-link {
+  color: #000000;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
