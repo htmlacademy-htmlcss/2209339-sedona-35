@@ -78,8 +78,26 @@ body {
   margin: 0 auto;
 }
 
-.advantages-tag {
-  height: 282px;
+.advantages-logo {
+  display:block;
+  padding: 0;
+  margin-top: 69px;
+  margin-bottom: 25px;
+  margin-left: 290px;
+  margin-right: 290px;
+  text-align: center;
+}
+
+.advantages-logo-description {
+  display:block;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 90px;
+  margin-left: 274px;
+  margin-right: 274px;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
   text-align: center;
 }
 
