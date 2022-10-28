@@ -271,7 +271,10 @@ ul {
 }
 
 .subsribe-form {
-  margin: 0 360px 0 360px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin: 0 auto;
+  width: 684px;
 }
 
 .main-footer {
@@ -430,9 +433,9 @@ ul {
 }
 
 .hotel-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  gap: 20px;
   margin: 0;
   padding-left: 70px;
   padding-right: 70px;
@@ -441,11 +444,18 @@ ul {
 }
 
 .hotel-card {
+  justify-items: center;
+  display: grid;
+  grid-template-columns: 140px 140px;
+  column-gap: 20px;
+  row-gap: 16px;
   padding: 20px;
   border: 1px solid #e6e6e6;
 }
 
 .hotel-card-link {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
   color: #000000;
   font-size: 24px;
   line-height: 28px;
@@ -453,9 +463,10 @@ ul {
   text-align: center;
   text-decoration: none;
 }
-
 .pogination {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(6, 60px);
+  gap: 8px;
   padding-top: 40px;
   padding-left: 62px;
   padding-right: 70px;
@@ -464,8 +475,5 @@ ul {
 
 .pogination-link {
   display: block;
-  width: 60px;
   height: 60px;
-  margin-left: 8px;
-  margin-right: 8px;
 }
