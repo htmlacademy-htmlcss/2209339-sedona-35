@@ -295,6 +295,10 @@ a  {
   content: "";
 }
 
+.grey-line {
+  padding-top: 103px;
+}
+
 .grey-line::before {
   position: absolute;
   bottom: -1px;
@@ -527,6 +531,7 @@ a  {
 .main-footer {
   display: flex;
   justify-content: space-between;
+  align-items: stretch;
   padding-left: 70px;
   padding-right: 70px;
 }
@@ -546,21 +551,7 @@ a  {
 
 .icon {
   position: relative;
-  top: 5px;
-  padding: 11px 13px;
-  margin-bottom: 35px;
-}
-
-.icon {
-  position: relative;
-  top: 5px;
-  padding: 11px 13px;
-  margin-bottom: 35px;
-}
-
-.icon {
-  position: relative;
-  top: 5px;
+  top: 2px;
   padding: 11px 13px;
   margin-bottom: 35px;
 }
@@ -575,7 +566,7 @@ a  {
 
 .icon-html {
   position: relative;
-  top: 51px;
+  top: 48px;
   margin-bottom: 35px;
 }
 
@@ -716,8 +707,8 @@ a  {
 .catalog-filter-infrastructure {
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  margin-bottom: 73px;
+  justify-content: start;
+  margin-bottom: 57px;
   margin-right: 70px;
   padding: 0;
   border: none;
@@ -730,9 +721,9 @@ a  {
 .catalog-filter-type {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: start;
   padding: 0 76px 0 0;
-  margin-bottom: 73px;
+  margin-bottom: 57px;
   margin-right: 70px;
   border: none;
 }
@@ -751,6 +742,7 @@ a  {
   position: relative;
   display: block;
   padding-left: 36px;
+  margin: 0;
 }
 
 .control:hover .control-chek {
@@ -810,12 +802,14 @@ a  {
 
 
 .catalog-filter-list {
+  display: flex;
+  flex-direction: column;
   padding: 0;
-  margin: 0;
+  margin: 0 0 16px 0;
 }
 
 .catalog-filter-title {
-  margin: 0;
+  margin: 0 0  32px 0;
   padding: 0;
   font-size: 20px;
   line-height: 24px;
@@ -826,8 +820,7 @@ a  {
 display: grid;
 grid-template-columns: 143px 143px;
 column-gap: 2px;
-margin-top: 32px;
-margin-bottom: 48px;
+margin: 0 0 36px 0;
 }
 
 .range-button-left {
@@ -915,13 +908,13 @@ box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
 .catalog-filter-button {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  min-height: 157px;
+  justify-content: start;
+  align-items: center;
   cursor: pointer;
 }
 
 .button-apply {
-  margin-bottom: 32px;
+  margin: 56px 0 36px 0;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 50px;
@@ -941,7 +934,7 @@ box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
 }
 
 .button-reset {
-  margin-bottom: 70px;
+  margin: 0;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 50px;
@@ -980,15 +973,16 @@ box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
 
 .title-catalog-cards {
   margin: 0;
-  padding-top: 50px;
-  padding-bottom: 40px;
+  padding: 0;
 }
 
 .select-container {
   display: flex;
   align-items: center;
+  padding-top: 47px;
   padding-left: 70px;
   padding-right: 70px;
+  padding-bottom: 40px;
 }
 
 .select-control {
@@ -996,6 +990,7 @@ box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
   border-radius: 4px;
   margin-right: 70px;
   margin-left: 200px;
+  padding-left: 15px;
   min-width: 292px;
   height: 49px;
   font-size: 18px;
@@ -1079,7 +1074,8 @@ box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
 .hotel-list {
   display: grid;
   grid-template-columns: 340px 340px 340px;
-  gap: 20px;
+  column-gap: 19px;
+  row-gap: 16px;
   margin: 0;
   padding-left: 70px;
   padding-right: 70px;
@@ -1089,6 +1085,7 @@ box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
 
 .hotel-card-image {
   margin: 0;
+  display: block;
 }
 
 .hotel-card-title {
@@ -1144,7 +1141,7 @@ box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
   background-color: rgba(117, 97, 87, 1);
   border: none;
   border-radius: 4px;
-  padding-top: 8px;
+  padding-top: 7px;
   padding-bottom: 8px;
   padding-left: 26px;
   padding-right: 26px;
@@ -1164,7 +1161,7 @@ box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
   background-color: rgba(130, 179, 211, 1);
   border: none;
   border-radius: 4px;
-  padding-top: 8px;
+  padding-top: 6px;
   padding-bottom: 8px;
   padding-left: 20px;
   padding-right: 20px;
@@ -1291,6 +1288,7 @@ box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
 
 .button-green {
   background-color: rgba(125, 181, 79, 1);
+  padding: 8px 18px 8px 18px;
 }
 
 .button-green:active {
