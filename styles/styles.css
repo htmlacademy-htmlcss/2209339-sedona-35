@@ -87,9 +87,7 @@ a
     text-transform: uppercase;
 }
 
-
 /* HEADER */
-
 
 .navigation
 {
@@ -142,7 +140,7 @@ a
     margin-right: 16px;
     margin-left: 16px;
     padding-top: 20px;
-    padding-bottom: 18px;
+    padding-bottom: 17px;
 
     text-align: center;
     text-decoration: none;
@@ -152,7 +150,15 @@ a
 
 .navigation-link:hover
 {
-    border-bottom: 2px solid rgba(117, 98, 87, 1);
+    border-bottom: 3px solid rgba(117, 98, 87, 1);
+}
+
+.navigation-link:focus
+{
+    outline: none;
+    outline-offset: 0;
+    border-bottom: 3px solid rgba(117, 98, 87, 1);
+
 }
 
 .navigation-user
@@ -249,9 +255,7 @@ a
     background-color: rgba(117, 97, 87, 1);
 }
 
-
 /* Promo section */
-
 
 .promo
 {
@@ -290,8 +294,6 @@ a
     padding-top: 51px;
     padding-bottom: 82px;
 }
-
-
 
 /* Advantages section */
 
@@ -517,7 +519,6 @@ a
     background-position: center;
 }
 
-
 /* Search section */
 
 .search
@@ -578,7 +579,6 @@ a
     border-radius: 4px;
     background-color: rgba(117, 97, 87, 1);
 }
-
 
 /* Subscribe section */
 
@@ -687,27 +687,31 @@ a
 {
     display: flex;
 
+    max-width: 142px;
     margin: 0;
     padding: 0;
 
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-footer-item
 {
     display: flex;
 
-    justify-content: end;
-    align-items: end;
+    width: 47px;
+    height: 40px;
+
+    justify-content: center;
+    align-items: flex-end;
 }
 
-.icon
+.footer-link:focus
 {
-    position: relative;
-    top: 2px;
-
-    margin-bottom: 35px;
-    padding: 11px 13px;
+    fill: rgba(104, 162, 202, 1);
+    outline: none;
+    outline-offset: 0;
 }
 
 .icon:hover path
@@ -718,6 +722,12 @@ a
 .icon:active path
 {
     fill: rgba(104, 162, 202, .3);
+}
+
+.icon:focus path
+{
+    fill: rgba(104, 162, 202, 1);
+    outline: none;
 }
 
 .icon-html
@@ -736,6 +746,11 @@ a
 .icon-html:active path
 {
     fill: rgba(117, 97, 87, .3);
+}
+
+.icon-html:focus path
+{
+    fill: red;
 }
 
 .footer-contacs
@@ -766,6 +781,14 @@ a
     color: rgba(117, 97, 87, .3);
 }
 
+.footer-contacs:focus-visible
+{
+    color: rgba(117, 97, 87, 1);
+    outline: none;
+    outline-offset: 0;
+    border: none;
+}
+
 .html-logo
 {
     display: block;
@@ -776,13 +799,7 @@ a
     padding: 0;
 }
 
-
-
-/*  */
 /* INNER PAGE */
-/*  */
-
-
 
 .container-filter
 {
@@ -796,9 +813,7 @@ a
     background-size: cover;
 }
 
-
 /* Inner header */
-
 
 .inner-header
 {
@@ -875,9 +890,7 @@ a
     background-position: center;
 }
 
-
 /* catalog-section */
-
 
 .catalog-hotels
 {
@@ -947,22 +960,31 @@ a
 
     display: block;
 
+    cursor: pointer;
     margin: 0;
     padding-left: 36px;
 }
 
-.control:hover .control-chek
+.control:hover
 {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, .25);
+    opacity: 0.7;
 }
 
-.control-input:disabled + .control-chek
+.control:active
 {
-    box-shadow: none;
+    opacity: 0.3;
 }
 
-.control-input[type='checkbox']:checked + .control-chek::before,
-.control-input[type='checkbox']:checked + .control-chek::after
+.control:focus
+{
+    opacity: 0.7;
+
+    outline: 3px solid rgba(131, 179, 211, 1);
+    outline-offset: 0;
+}
+
+.control-input[type='checkbox']:checked + .control-chekt::before,
+.control-input[type='checkbox']:checked + .control-chekt::after
 {
     position: absolute;
     top: 5px;
@@ -976,8 +998,7 @@ a
     background-image: url(../images/check-box.svg);
 }
 
-.control-input[type='radio']:checked + .control-round::before,
-.control-input[type='radio']:checked + .control-round::after
+.control-input[type='radio']:checked + .control-round::before
 {
     position: absolute;
     top: 4px;
@@ -988,9 +1009,10 @@ a
 
     content: '';
 
-    background-image: url(../images/round.svg);
+    border-radius: 50%;
+    background-color: rgba(63, 94, 114, 1);
 }
-.control-chek
+.control-chekt
 {
     position: absolute;
     top: 2px;
@@ -1050,17 +1072,23 @@ a
     column-gap: 2px;
 }
 
+.range-lable
+{
+    position: relative;
+}
+
 .range-button-left
 {
     font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
     font-size: 18px;
     line-height: 24px;
 
-    width: 123px;
+    width: 103px;
     height: 48px;
-    padding: 0 20px 0 0;
+    padding: 0 20px 0 20px;
 
-    text-align: right;
+    text-align: left;
 
     border: none;
     border-top-left-radius: 4px;
@@ -1071,14 +1099,15 @@ a
 .range-button-right
 {
     font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
     font-size: 18px;
     line-height: 24px;
 
-    width: 123px;
+    width: 103px;
     height: 48px;
-    padding: 0 20px 0 0;
+    padding: 0 20px 0 20px;
 
-    text-align: right;
+    text-align: left;
 
     border: none;
     border-top-right-radius: 4px;
@@ -1086,17 +1115,22 @@ a
     background-color: #f2f2f2;
 }
 
-.range-button::-webkit-outer-spin-button,
-.range-button::-webkit-inner-spin-button
-{
-    margin: 0;
-
-    appearance: none;
-}
-
 .range-button:active
 {
-    outline: 2px solid #000;
+    outline: 3px solid #000;
+}
+
+.range-text
+{
+    position: absolute;
+    top: 12px;
+    right: 20px;
+
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .range-scale
@@ -1228,6 +1262,12 @@ a
     outline: none;
 }
 
+.button-reset:focus
+{
+    outline: 3px solid rgba(131, 179, 211, 1);
+    outline-offset: 0;
+}
+
 .button-reset:disabled
 {
     opacity: .1;
@@ -1235,7 +1275,6 @@ a
 }
 
 /* Title catolog section */
-
 
 .title-catalog-cards
 {
@@ -1261,13 +1300,13 @@ a
     font-size: 18px;
     line-height: 21px;
 
-    min-width: 292px;
+    min-width: 290px;
     height: 49px;
     margin-right: 70px;
     margin-left: 200px;
     padding-left: 15px;
 
-    border-color: #e5e5e5;
+    border: 2px solid #e5e5e5;
     border-radius: 4px;
 }
 
@@ -1279,6 +1318,13 @@ a
 .select-control:active
 {
     border: 2px solid rgba(63, 94, 114, 1);
+}
+
+.select-control:focus
+{
+    border: 2px solid rgba(104, 162, 202, 1);
+    outline: 3px solid rgba(131, 179, 211, 1);
+    outline-offset: 0;
 }
 
 .select-control:disabled
@@ -1350,14 +1396,19 @@ a
     border: 2px solid rgba(0, 0, 0, 1);
 }
 
+.button-border:focus
+{
+    border: 2px solid rgba(104, 162, 202, 1);
+    outline: 3px solid rgba(131, 179, 211, 1);
+    outline-offset: 0;
+}
+
 .button-border:disabled
 {
     border: 2px solid rgba(0, 0, 0, .3);
 }
 
-
 /* Hotel list section */
-
 
 .hotel-list
 {
@@ -1444,17 +1495,17 @@ a
     font-weight: 700;
     line-height: 20px;
 
-    display: inline-block;
+    display: flex;
 
-    padding-top: 7px;
-    padding-right: 26px;
-    padding-bottom: 8px;
-    padding-left: 26px;
+    width: 140px;
+    height: 36px;
 
     cursor: pointer;
-    text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+
+    justify-content: center;
+    align-items: center;
 
     color: #fff;
     border: none;
@@ -1471,15 +1522,16 @@ a
 
     display: inline-block;
 
-    padding-top: 6px;
-    padding-right: 20px;
-    padding-bottom: 8px;
-    padding-left: 20px;
+    width: 140px;
+    height: 36px;
 
     cursor: pointer;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+
+    justify-content: center;
+    align-items: center;
 
     color: #fff;
     border: none;
@@ -1529,7 +1581,6 @@ a
 }
 
 /* Pogination */
-
 
 .pogination
 {
@@ -1581,15 +1632,19 @@ a
     background-color: #fff;
 }
 
+.link-dot:hover
+{
+    opacity: 0.6;
+
+}
+
 .link-ten
 {
     padding-right: 18px;
     padding-left: 18px;
 }
 
-
 /* Button */
-
 
 .button-brown:active
 {
@@ -1600,6 +1655,13 @@ a
 .button-brown:hover
 {
     outline: none;
+    background-color: rgba(97, 80, 72, 1);
+}
+
+.button-brown:focus
+{
+    outline: 2px solid #000;
+    outline-offset: 0;
     background-color: rgba(97, 80, 72, 1);
 }
 
@@ -1624,13 +1686,18 @@ a
     background-color: rgba(104, 162, 202, 1);
 }
 
+.button-blue:focus
+{
+    outline: 2px solid #000;
+    outline-offset: 0;
+    background-color: rgba(104, 162, 202, 1);
+}
+
 .button-blue:disabled:hover
 {
     outline: none;
     background-color: rgba(229, 229, 229, 1);
 }
-
-
 
 .button-green
 {
@@ -1651,16 +1718,20 @@ a
     background-color: rgba(108, 158, 66, 1);
 }
 
+.button-green:focus
+{
+    outline: 3px solid #000;
+    outline-offset: 0;
+    background-color: rgba(108, 158, 66, 1);
+}
+
 .button-green:disabled:hover
 {
     outline: none;
     background-color: rgba(229, 229, 229, 1);
 }
 
-
-
 /* Modal page */
-
 
 .modal-container
 {
