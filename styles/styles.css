@@ -968,6 +968,7 @@ body {
   border-radius: 50%;
   background-color: #3f5e72;
 }
+
 .control-chekt {
   position: absolute;
   top: 2px;
@@ -2031,7 +2032,7 @@ body {
   display: block;
 }
 
-.tooltip-button:focus  ~ .tooltip-button-text {
+.tooltip-button:focus ~ .tooltip-button-text {
   display: block;
 }
 
