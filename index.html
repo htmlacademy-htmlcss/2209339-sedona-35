@@ -137,7 +137,7 @@
             Только полезная информация и никакого спама, честное бойскаутское!
           </p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="subscribe-input" type="email" name="email" placeholder="Ваш e-mail" />
+            <input class="subscribe-input" type="email" name="email" placeholder="Ваш e-mail" required/>
             <button class="subscribe-button button-blue" type="submit">
               Подписаться
             </button>
@@ -203,7 +203,7 @@
                 <div class="date-input">
                   <div class="date-input">
                     <input class="auth-form-field field-entry" type="text" placeholder="Укажите дату"
-                      name="arrival-date" id="date-entry" />
+                      name="arrival-date" id="date-entry" required/>
                     <span class="calendar-modal">
                       <svg width="16" height="15" viewBox="0 0 16 15" fill="rgba(117, 97, 87, 0.3)"
                         xmlns="http://www.w3.org/2000/svg">
@@ -250,7 +250,7 @@
                 <div class="date-input">
                   <div class="date-input">
                     <input class="auth-form-field field-leave" type="text" placeholder="Укажите дату"
-                      name="date-of-departure" id="date-leave" />
+                      name="date-of-departure" id="date-leave" required/>
                     <span class="calendar-modal">
                       <svg width="16" height="15" viewBox="0 0 16 15" fill="rgba(117, 97, 87, 0.3)"
                         xmlns="http://www.w3.org/2000/svg">
@@ -299,13 +299,15 @@
                     xmlns="http://www.w3.org/2000/svg">
                     <path class="button-minus-img" d="M0 0L0 2L14 2V0L0 0Z" fill="rgba(117, 97, 87, 0.3)" />
                   </svg>
+                  <span class="visually-hidden">Убрать одного взрослого человека.</span>
                 </button>
-                <input class="auth-form-field button-count" type="number" name="count-adults" />
+                <input class="auth-form-field button-count" type="number" name="count-adults" required/>
                 <button class="button-plus" type="button">
                   <svg class="button-plus-img" width="14" height="14" viewBox="0 0 14 14" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path class="button-plus-img" d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="rgba(117, 97, 87, 0.3)" />
                   </svg>
+                  <span class="visually-hidden">Добавить одного взрослого человека.</span>
                 </button>
 
                 <span class="span-child">Дети:</span>
@@ -322,13 +324,15 @@
                     xmlns="http://www.w3.org/2000/svg">
                     <path class="button-minus-img" d="M0 0L0 2L14 2V0L0 0Z" fill="rgba(117, 97, 87, 0.3)" />
                   </svg>
+                  <span class="visually-hidden">Убрать одного ребенка.</span>
                 </button>
-                <input class="auth-form-field button-count" type="number" name="count-child" />
+                <input class="auth-form-field button-count" type="number" name="count-child" required/>
                 <button class="button-plus" type="button">
                   <svg class="button-plus-img" width="14" height="14" viewBox="0 0 14 14" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path class="button-plus-img" d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="rgba(117, 97, 87, 0.3)" />
                   </svg>
+                  <span class="visually-hidden">Добавить одного ребенка.</span>
                 </button>
               </div>
               <button class="modal-botton-search button-blue" type="submit">
